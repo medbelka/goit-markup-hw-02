@@ -23,6 +23,7 @@
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 #current {
@@ -145,10 +146,21 @@ ul {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 31px;
+    color: var(--background-color);
+}
+
+#footer .nav-contacts a{
+    font-weight: 400;
+    color: var(--text-color-adrress-op60);
+    line-height: 24px;
+}
+
+#footer .nav-contacts a:hover, :focus{
+    color: var(--brand-color);
 }
 
 .logo-brand-footer {
-    color: var(--background-color);
+    color: var(--brand-color);
 }
 
 /* .logo-footer {
@@ -158,6 +170,7 @@ ul {
 .address {
     font-style: normal;
     font-weight: 400;
+    line-height: 24px;
     color: var(--background-color);
 }
 
