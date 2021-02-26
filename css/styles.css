@@ -82,8 +82,9 @@ ul {
     color: var(--brand-color);
 }
 
-.banner {
+.main-banner {
     background-color: #2F303A;
+    min-height: 600px;
 }
 
 .banner-slogan {
