@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href=".css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href=".css/normalize.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Студия</title>
@@ -12,43 +12,46 @@
 <body>
     <!--header container-->
     <header>
-        <nav>
-            <h1 class="logo"><span class="logo-brand">Web</span>Studio</h1>
-            <ul  class="nav-panel">
-                <li><a id="current" href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="#footer">Контакты</a></li>
-            </ul>
-            <ul>
+        <nav class="header-container">
+            <a class="logo" href="index.html"><span class="logo-brand">Web</span>Studio</a>
+                <ul class="nav-panel">
+                    <li class="nav-item"><a class="nav-link" id="current" href="./index.html">Студия</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Контакты</a></li>
+                </ul>
+        </nav>
+        <ul class="contacts-container">
                 <li class="nav-contacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="nav-contacts"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </nav>
+        </ul>
     </header>
     <main>
         <!--banner container-->
-        <div class="banner">
-            <h2 class="banner-slogan">Эффективные решения для вашего бизнеса</h2>
-            <a href="#">Заказать услугу</a>
-        </div>
+        <section>
+            <div class="banner">
+                <h2 class="banner-slogan">Эффективные решения для вашего бизнеса</h2>
+                <button type="button" class="btn">Заказать услугу</button>
+            </div>
+        </section>
         <!--preferences section-->
         <section class="preferences">
+            <h1 class="hidden">WebStudio</h1>
             <ul>
                 <li>
                     <h3>Внимание к деталям</h3>
-                    <span>Идейные соображения, а также начало повседневной работы по формированию позиции.</span>
+                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li>
                     <h3>Пунктуальность</h3>
-                    <span>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</span>
+                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li>
                     <h3>Планирование</h3>
-                    <span>Равным образом консультация с широким активом в значительной степени обуславливает.</span>
+                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li>
                     <h3>Современные технологии</h3>
-                    <span>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</span>
+                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
         </section>
@@ -57,13 +60,13 @@
             <h2>Чем мы занимаемся</h2>
             <ul>
                 <li>
-                    <img src="./img/img1.jpg" title="Разработка сайтов" alt="Разработка сайтов">
+                    <img src="./img/img1.jpg" width="370" title="Разработка сайтов" alt="Разработка сайтов">
                 </li>
                 <li>
-                    <img src="./img/img2.jpg" title="Разработка мобильных приложений" alt="Разработка мобильных приложений">
+                    <img src="./img/img2.jpg" width="370" title="Разработка мобильных приложений" alt="Разработка мобильных приложений">
                 </li>
                 <li>
-                    <img src="./img/img3.jpg" title="Дизайн интерфейса" alt="Дизайн интерфейса"> 
+                    <img src="./img/img3.jpg" width="370" title="Дизайн интерфейса" alt="Дизайн интерфейса"> 
                 </li>
             </ul>
                 </section>
@@ -96,12 +99,18 @@
     </main>
     <!-- footer container -->
     <footer id="footer">
-        <p class="logo-footer"><span class="logo-brand-footer">Web</span>Studio</p>
-        <ul>
-            <li><address class="address">г. Киев, пр-т Леси Украинки, 26</address></li>
-            <li class="nav-contacts"><a href="mailto:info@example.com">info@example.com</a></li>
-            <li class="nav-contacts"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
+        <a class="logo-footer" href="index.html"><span class="logo-brand">Web</span>Studio</a>
+            <ul>
+                <li>
+                    <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+                </li>
+                <li class="nav-contacts">
+                    <a href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="nav-contacts">
+                    <a href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
     </footer>
 </body>
 </html>
