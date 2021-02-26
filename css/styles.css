@@ -20,6 +20,7 @@ ul {
   
 h1,
 h3,
+h4,
 p,
 .product-title {
     margin: 0;
@@ -170,11 +171,13 @@ ul {
     line-height: 100%;
     letter-spacing: 0.03em;
     text-align: center;
-} 
+    } 
 
 .team h4 {
     color: var(--text-color-primary);
     font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 .team p {
