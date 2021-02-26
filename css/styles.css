@@ -16,31 +16,35 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
   
-  h1,
-  h3,
-  p,
-  .product-title {
+h1,
+h3,
+p,
+.product-title {
     margin: 0;
-  }
+}
   
-  h2 {
+h2 {
     margin-top: 0;
     margin-bottom: 50px;
-  }
+}
   
+button {
+    cursor: pointer;
+}
 
-.logo .logo-brand {
+.logo,
+.logo-brand {
     font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
 }
 
 .logo {
     color: #000000;
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
 }
 
 .logo-brand {
@@ -61,7 +65,7 @@ ul {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 100%;
     letter-spacing: 0.02em;  
 }
 
@@ -87,7 +91,7 @@ ul {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 116%;
     text-align: center;
 }
 
@@ -96,7 +100,7 @@ ul {
     color: var(--background-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 160%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 32px;
@@ -107,38 +111,41 @@ ul {
     color: var(--text-color-primary);
 }
 
-.preferences h3 {
-    color: var(--text-color-primary);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
 .preferences,
 .team,
-.whatwedo {
+.whatwedo,
+.section-btn {
     padding-bottom: var(--set-gap94);
 }
 
 .preferences,
-.team {
+.team,
+.section-btn {
     padding-top: var(--set-gap94);
+}
+
+.preferences h3 {
+    color: var(--text-color-primary);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .preferences p {
     color: var(--text-color-secondary);
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 146%;
 }
 
-.whatwedo h2 {
+.whatwedo h2,
+.team h2 {
     color: var(--text-color-primary);
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 100%;
     text-align: center;
 }
 
@@ -154,30 +161,22 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team h2 {
-    color: var(--text-color-primary);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+.team h4,
+.team p {
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
     text-align: center;
-}
+} 
 
 .team h4 {
     color: var(--text-color-primary);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    text-align: center;
 }
 
 .team p {
     color: var(--text-color-secondary);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    text-align: center;
 }
 
 #footer {
@@ -188,10 +187,11 @@ ul {
 
 .logo-footer {
     color: var(--background-color);
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 31px;
     margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
     letter-spacing: 0.03em;
 }
 
@@ -205,16 +205,11 @@ ul {
     color: var(--brand-color);
 }
 
-.logo-footer > .logo-brand {
-    color: var(--brand-color);
-}
-
 .address {
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 171%;
     font-size: 14px;
-    line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--background-color);
 }
@@ -223,18 +218,23 @@ ul {
     display: none;
 }
 
+.btn-list {
+    margin-bottom: 50px;
+}
+
 .button {
     background-color: #F5F4FA;
     color: var(--text-color-primary);
     width: fit-content;
-    border: 1px solid;
     padding: 6px 22px;
     border-radius: 4px;
+    border: none;
 }
 
-.button:hover {
+.button:hover, :focus {
     background-color: var(--brand-color);
     color: var(--background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .products {
@@ -243,18 +243,20 @@ ul {
     background-color: var(--background-color);
 }
 
+.product-desc {
+    padding: 20px 24px;
+}
+
 .product-title {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 171%;
     color: var(--text-color-primary);
-    text-align: center;
 }
 
 .product-description {
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 160%;
     color: var(--text-color-secondary);
-    text-align: center;
 }
