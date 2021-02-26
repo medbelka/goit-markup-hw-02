@@ -32,6 +32,7 @@ h2 {
   
 button {
     cursor: pointer;
+    border: none;
 }
 
 .logo,
@@ -230,7 +231,6 @@ ul {
     width: fit-content;
     padding: 6px 22px;
     border-radius: 4px;
-    border: none;
 }
 
 .button:hover, :focus {
